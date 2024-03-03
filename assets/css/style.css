@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('assets/fonts/helveticaneue.woff');
+    src: url('../fonts/helveticaneue.woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Hemi Head';
-    src: url('assets/fonts/hemi-head.woff');
+    src: url('../fonts/hemi-head.woff');
 }
 
 :root {
