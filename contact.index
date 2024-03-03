@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <form action="#"> 
+
+    <h1>Contact Us</h1>
+        <!-- Name -->
+        <h3>Name:</h3>
+        <label for="name"></label>
+        <input type="text" id="contact_name" name="contactname" value="Your Name">
+
+        <!-- Email -->
+        <h3>Email:</h3>
+        <label for="email"></label>
+        <input type="text" id="contact_email" name="contactemail" placeholder="example@gmail.com">
+
+        <!-- Subject -->
+        <h3>Subject:</h3>
+        <label for="subject"></label>
+        <input type="text" id="contact_subject" name="contactsubject" placeholder="Your Subject">
+
+        <!-- Student Email -->
+        <h3>Email:</h3>
+        <label for="studentemails"></label>
+        <select name="studentemails" id="student_emails">
+            <option value="darbysumner">designbydarbs@gmail.com</option>
+            <option value="ashleymiles">ashleymiles@dolvadadesign.com</option>
+            <option value="ashleygrant">ashleyg.dtd@gmail.com</option>
+            <option value="angelinaminshall">rgbgardens@gmail.com</option>
+            <option value="tatumbaldwin">design@transcendentdesignstudio.com</option>
+            <option value="charlisizemore">cassevendesign@gmail.com</option>
+            <option value="maggieidzikowska">magda.wild.design@gmail.com</option>
+            <option value="madeleineleahy">leahygraphics@gmail.com</option>
+            <option value="krismcllvenna">kris@gbrfoods.com</option>
+            <option value="sarahgephart">sarah@sassytoast.com</option>
+            <option value="andreashepherd">hildegun75@gmail.com</option>
+            <option value="hunterkorsen">hunterkorsen@gmail.com</option>
+            <option value="carsonspencer">carsonteall@gmail.com</option>
+        </select>
+
+        <!-- Message -->
+        <h3>Your Message:</h3>
+        <label for="message"></label>
+        <input type="text" name="message" id="contact_message" placeholder="Your message">
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
