@@ -5,53 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
 </head>
 <body>
-    <form action="#"> 
 
-    <h1>Contact Us</h1>
-        <!-- Name -->
-        <h3>Name:</h3>
-        <label for="name"></label>
-        <input type="text" id="contact_name" name="contactname" value="Your Name">
+    <!-- PHP INCLUDE: NAV HERE -->
 
-        <!-- Email -->
-        <h3>Email:</h3>
-        <label for="email"></label>
-        <input type="text" id="contact_email" name="contactemail" placeholder="example@gmail.com">
+    <div id="contact_form_container" class="grid">
+        <form action="#" id="contact_form">
 
-        <!-- Subject -->
-        <h3>Subject:</h3>
-        <label for="subject"></label>
-        <input type="text" id="contact_subject" name="contactsubject" placeholder="Your Subject">
+        <h1>Contact Us</h1>
 
-        <!-- Student Email -->
-        <h3>Email:</h3>
-        <label for="studentemails"></label>
-        <select name="studentemails" id="student_emails">
-            <option value="darbysumner">designbydarbs@gmail.com</option>
-            <option value="ashleymiles">ashleymiles@dolvadadesign.com</option>
-            <option value="ashleygrant">ashleyg.dtd@gmail.com</option>
-            <option value="angelinaminshall">rgbgardens@gmail.com</option>
-            <option value="tatumbaldwin">design@transcendentdesignstudio.com</option>
-            <option value="charlisizemore">cassevendesign@gmail.com</option>
-            <option value="maggieidzikowska">magda.wild.design@gmail.com</option>
-            <option value="madeleineleahy">leahygraphics@gmail.com</option>
-            <option value="krismcllvenna">kris@gbrfoods.com</option>
-            <option value="sarahgephart">sarah@sassytoast.com</option>
-            <option value="andreashepherd">hildegun75@gmail.com</option>
-            <option value="hunterkorsen">hunterkorsen@gmail.com</option>
-            <option value="carsonspencer">carsonteall@gmail.com</option>
-        </select>
+            <!-- Name -->
+            <div class="flex-row">
+                <h3>Name:</h3>
+                <label for="name"></label>
+                <input type="text" id="contact_name" name="contactname" placeholder="Jane Doe">
+            </div>
 
-        <!-- Message -->
-        <h3>Your Message:</h3>
-        <label for="message"></label>
-        <input type="text" name="message" id="contact_message" placeholder="Your message">
+            <!-- Email -->
+            <div class="flex-row">
+                <h3>Email:</h3>
+                <label for="email"></label>
+                <input type="text" id="contact_email" name="contactemail" placeholder="username@email.com">
+            </div>
 
-        <!-- Submit -->
-        <input type="submit" value="Submit">
-    </form>
-    
+            <!-- Subject -->
+            <div class="flex-row">
+                <h3>Subject:</h3>
+                <label for="subject"></label>
+                <input type="text" id="contact_subject" name="contactsubject" placeholder="Subject">
+            </div>
+
+            <!-- Student Email -->
+            <div class="flex-row">
+                <h3>Student (if applicable)</h3>
+                <label for="studentemails"></label>
+                <select name="studentemails" id="student_emails">
+                    <option value="studentname">Student Name</option>
+                    <option value="darbysumner">Darby Sumner designbydarbs@gmail.com</option>
+                    <option value="ashleymiles">Ashley Miles ashleymiles@dolvadadesign.com</option>
+                    <option value="ashleygrant">Ashley Grant ashleyg.dtd@gmail.com</option>
+                    <option value="angelinaminshall">Angelina Minshall rgbgardens@gmail.com</option>
+                    <option value="tatumbaldwin">Tatum Baldwin design@transcendentdesignstudio.com</option>
+                    <option value="charlisizemore">Charlie Sizemore cassevendesign@gmail.com</option>
+                    <option value="maggieidzikowska">Maggie Idzikowska magda.wild.design@gmail.com</option>
+                    <option value="madeleineleahy">Madeleine Leahy leahygraphics@gmail.com</option>
+                    <option value="krismcllvenna">Kris Mcllvenna kris@gbrfoods.com</option>
+                    <option value="sarahgephart">Sarah Gephart sarah@sassytoast.com</option>
+                    <option value="andreashepherd">Andrea Shepherd hildegun75@gmail.com</option>
+                    <option value="hunterkorsen">Hunter Korsen hunterkorsen@gmail.com</option>
+                    <option value="carsonspencer">Carson Spencer carsonteall@gmail.com</option>
+                </select>
+            </div>
+
+            <!-- Message -->
+            <div class="flex-col">
+                <div><h3>Your Message:</h3></div>
+                <label for="message"></label>
+                <input type="text" name="message" id="contact_message" placeholder="Your message">
+            </div>
+            <!-- Submit -->
+            <input type="submit" value="Submit" id="submit_form">
+        </form>
+    </div>
 </body>
 </html>
