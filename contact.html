@@ -11,36 +11,36 @@
 
     <!-- PHP INCLUDE: NAV HERE -->
 
-    <div id="contact_form_container" class="grid">
-        <form action="#" id="contact_form">
+    <div id="contact_form_container">
+        <form action="#" id="contact_form" class="grid">
 
         <h1>Contact Us</h1>
 
             <!-- Name -->
-            <div class="flex-row">
-                <h3>Name:</h3>
-                <label for="name"></label>
+            <!-- <div class="flex-row"> -->
+                <h3 class="namehead">Name:</h3>
+                <label id="contact_name" for="name"></label>
                 <input type="text" id="contact_name" name="contactname" placeholder="Jane Doe">
-            </div>
+            <!-- </div> -->
 
             <!-- Email -->
-            <div class="flex-row">
-                <h3>Email:</h3>
-                <label for="email"></label>
+            <!-- <div class="flex-row"> -->
+                <h3 class="emailhead">Email:</h3>
+                <label for="email" id="contact_email"></label>
                 <input type="text" id="contact_email" name="contactemail" placeholder="username@email.com">
-            </div>
+            <!-- </div> -->
 
             <!-- Subject -->
-            <div class="flex-row">
-                <h3>Subject:</h3>
-                <label for="subject"></label>
+            <!-- <div class="flex-row"> -->
+                <h3 class="subjecthead">Subject:</h3>
+                <label for="subject" id="contact_subject"></label>
                 <input type="text" id="contact_subject" name="contactsubject" placeholder="Subject">
-            </div>
+            <!-- </div> -->
 
             <!-- Student Email -->
-            <div class="flex-row">
-                <h3>Student (if applicable)</h3>
-                <label for="studentemails"></label>
+            <!-- <div class="flex-row"> -->
+                <h3 class="studenthead">Student (if applicable):</h3>
+                <label for="studentemails" id="student_emails">Choose a pet:</label>
                 <select name="studentemails" id="student_emails">
                     <option value="studentname">Student Name</option>
                     <option value="darbysumner">Darby Sumner designbydarbs@gmail.com</option>
@@ -57,16 +57,17 @@
                     <option value="hunterkorsen">Hunter Korsen hunterkorsen@gmail.com</option>
                     <option value="carsonspencer">Carson Spencer carsonteall@gmail.com</option>
                 </select>
-            </div>
+            <!-- </div> -->
 
             <!-- Message -->
-            <div class="flex-col">
-                <div><h3>Your Message:</h3></div>
-                <label for="message"></label>
-                <input type="text" name="message" id="contact_message" placeholder="Your message">
-            </div>
+            <!-- <div class="flex-col"> -->
+                <div><h3 class="messagehead">Your Message:</h3></div>
+                <label for="message" id="contact_message"></label>
+                <textarea name="message" id="contact_message" placeholder="Your message" cols="30" rows="10"></textarea>
+            <!-- </div> -->
             <!-- Submit -->
-            <input type="submit" value="Submit" id="submit_form">
+            <label for="submit" id="submit_form" ></label>
+            <button type="submit" value="Submit" id="submit_form">Submit</button>
         </form>
     </div>
 </body>
