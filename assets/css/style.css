@@ -35,6 +35,10 @@ body {
     display: flex;
 }
 
+.grid {
+    display: grid;
+}
+
 .nav {
     height: fit-content;
     width: 100vw;
