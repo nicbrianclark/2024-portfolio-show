@@ -37,6 +37,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr 1fr 1fr 1fr 1fr;
+
 }
 
 /* name */
@@ -124,15 +125,16 @@
 /* Font sizes and styles */
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     font-family: 'Hemi Head 426';
     color: var(--white);
     grid-column: 1 / span 2;
+    padding: 2rem;
 }
 
 label {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--white);
     font-family: 'Hemi Head 426';
     grid-column: 1 / 2;
@@ -258,4 +260,14 @@ input, #contact_message, #student_emails, #contact_subject, #contact_email, #con
     font-size: 4rem;
     padding-bottom: 4.5rem ;
 }
+}
+
+@media screen and (min-width: 1600px) { 
+
+    .grid {
+        gap: 2rem;
+        grid-template-columns: 0.5fr 2fr;
+    }
+
+
 }
