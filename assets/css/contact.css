@@ -120,6 +120,16 @@
     text-align: center;
 }
 
+#submit_form:hover {
+    background: linear-gradient(to right, var(--red), var(--white));
+    color: var(--black);
+}
+
+#submit_form:active {
+    background: var(--black);
+    color: var(--white);
+}
+
 
 
 /* Font sizes and styles */
@@ -139,6 +149,7 @@ label {
     font-family: 'Hemi Head 426';
     grid-column: 1 / 2;
 }
+
 
 /* Sponsors */
 

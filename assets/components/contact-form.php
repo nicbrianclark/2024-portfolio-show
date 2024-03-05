@@ -1,7 +1,6 @@
 
 
 <!-- FORM and SPONSORS to include on pages -->
-
  
 <div id="contact_form_container">
         <h1>Contact Us</h1>
