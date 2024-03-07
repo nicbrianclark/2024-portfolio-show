@@ -1,0 +1,39 @@
+.about-headers {
+    font-family: 'Hemi Head';
+    font-size: 3rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.about-text {
+    font-family: 'Helvetica Neue';
+    color: var(--white);
+    font-size: 1.2rem;
+    width: 319px;
+}
+
+.about-btn {
+    text-decoration: none;
+    color: ;
+}
+
+.group-img-containers {
+    width: 322px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.group-imgs {
+    width: 100%;
+}
+
+.professor-img-containers {
+    width: 286px;
+    height: 286px;
+    object-fit: cover;
+}
+
+.professor-imgs {
+    width: 100%;
+}
+
