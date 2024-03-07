@@ -14,8 +14,35 @@
 
 .about-btn {
     text-decoration: none;
-    color: ;
+    color: white;
 }
+
+.about-btn {
+    text-decoration: none;
+    color: white;
+    background-color: var(--red);
+    color: var(--white);
+    font-family: 'Hemi Head 426';
+    font-size: 2.5rem;
+    width: 20rem;
+    margin: 0 auto;
+    padding-top: 0.9rem;
+    padding-right:3rem ;
+    text-align: center;
+}
+
+.about-btn:hover {
+    background: linear-gradient(to right, var(--red), var(--white));
+    color: var(--black);
+}
+
+.about-btn:active {
+    background: var(--black);
+    color: var(--white);
+}
+
+
+
 
 .group-img-containers {
     width: 322px;
