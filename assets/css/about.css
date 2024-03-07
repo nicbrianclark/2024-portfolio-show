@@ -63,10 +63,16 @@
 
 /* image style */
 
-.group-imgs, .professor-imgs {
+.group-img-container, .professor-img-container {
     display: block;
     margin: 0 auto;
     width: 80%;
+}
+
+.group-imgs, .professor-imgs {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* background colors for sections */
@@ -123,12 +129,23 @@
 
     /* adjust team grid section */
     .team-grid {
-        grid-template-columns: 1fr 1fr;
+        padding: 1rem 10rem 1rem 10rem;
+        grid-template-columns: 1fr 0.8fr;
         grid-template-rows: 1fr 0.25fr;
     }
 
     .about-btn {
         grid-column: 2/3;
+    }
+
+    .team-grid .group-img-container{
+        grid-row: 1/2;
+        min-width: 400px;
+        max-width: 812px;
+    }
+
+    .team-grid .group-imgs {
+        width: 100%;
     }
 
 }
