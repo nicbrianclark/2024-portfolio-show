@@ -13,8 +13,8 @@
     font-family: 'Helvetica Neue';
     color: var(--white);
     font-size: 2rem;
-    width: 300px;
     line-height: 3rem;
+    width: 80%;
 }
 
 .professor-name {
@@ -37,7 +37,7 @@
 
 .about-btn {
     display: block;
-    width: 300px;
+    width: 80%;
 
     text-decoration: none;
     color: white;
@@ -63,17 +63,12 @@
 
 /* image style */
 
-.group-imgs {
+.group-imgs, .professor-imgs {
     display: block;
-    height: 230px;
-    min-width: 322px;
+    margin: 0 auto;
+    width: 80%;
 }
 
-.professor-imgs {
-    display: block;
-    width: 286px;
-    height: 286px;
-}
 /* background colors for sections */
 
 .team, .program {
@@ -108,7 +103,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
 
-    gap: 3rem;
     padding: 5rem 10rem 5rem 10rem;
 }
 
@@ -121,6 +115,20 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr;
 
-    gap: 3rem;
+
     padding: 5rem 10rem 5rem 10rem;
+}
+
+@media screen and (min-width: 950px) {
+
+    /* adjust team grid section */
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.25fr;
+    }
+
+    .about-btn {
+        grid-column: 2/3;
+    }
+
 }
