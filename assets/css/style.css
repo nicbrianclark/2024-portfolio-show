@@ -42,18 +42,34 @@ body {
     display: grid;
 }
 
+.nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
 .nav {
     height: fit-content;
-    width: 100vw;
-    padding: 1rem 10rem 1rem 10rem;
+    width: 100%;
+    padding: 3rem 10rem 3rem 10rem;
     justify-content: space-between;
     align-items: center;
     color: var(--white);
-    /* background-color: #981A13; */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.close-icon {
+    display: none;
 }
 
 .nav-menu-img {
-    max-width: 300px;
+    max-width: 225px;
 }
 
 .nav-menu {
@@ -66,7 +82,7 @@ body {
 
 .nav-menu a {
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: none;
 }
 
@@ -88,13 +104,13 @@ body {
 }
 
 .landing-hero {
-    height: 50vh;
+    height: auto;
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    padding: 6rem 30rem 6rem 30rem;
+    gap: 5rem;
+    padding: 10rem 20rem 10rem 20rem;
     background-image: url('../images/coding-image.jpg');
     background-position: center;
     background-size: cover;
@@ -103,12 +119,326 @@ body {
 
 .landing-hero h2 {
     font-family: 'HemiHead', sans-serif;
-    font-size: 6rem;
+    font-size: 10rem;
     text-align: center;
 }
 
 .landing-hero h1 {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 3rem;
+    font-style: italic;
     text-align: center;
+}
+
+#hero-countdown {
+    font-family: 'HemiHead', sans-serif;
+    font-size: 4rem;
+    background-color: var(--red);
+    padding: 2rem 6rem 2rem 6rem;
+    border-radius: 10rem;
+}
+
+#hero-countdown span {
+    font-size: inherit;
+    font-family: inherit;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+}
+
+.mission-details-container {
+    background-color: var(--blue);
+    color: var(--white);
+    flex-direction: column;
+    padding: 6rem 10rem 6rem 10rem;
+    height: auto;
+    gap: 3rem;
+}
+
+.mission-details-container h2 {
+    font-family: 'HemiHead', sans-serif;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.mission-details-content {
+    gap: 6rem;
+}
+
+.details-left {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.event-info h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.details-left p {
+    font-size: 2.5rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    line-height: 1.75;
+}
+
+.details-left .social-icons {
+    padding: 2rem 0 1rem 0;
+}
+
+.calendar-directions {
+    font-size: 2.5rem;
+}
+
+.calendar-directions a {
+    font-style: none;
+    font-size: 2.5rem;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.calendar-directions a:hover {
+    color: var(--light-red);
+}
+
+.img-right {
+    align-items: center;
+    justify-content: center;
+}
+
+.img-right img {
+    width: fit-content;
+    max-height: 500px
+}
+
+.footer {
+    color: var(--white);
+    padding: 8rem 10rem 8rem 10rem;
+    height: auto;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.left-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.left-footer h4 {
+    font-size: 2.5rem;
+}
+
+.middle-footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.middle-footer h4 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.calendar-directions-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.calendar-directions-footer a {
+    font-size: 2.5rem;
+}
+
+.social-icons-footer a img {
+    max-width: 4rem;
+}
+
+.footer-menu {
+    flex-direction: column;
+    text-align: right;
+    gap: 2.5rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.footer-menu a {
+    color: var(--white);
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: var(--light-red);
+}
+
+@media screen and (max-width: 1050px) {
+    .hamburger {
+        position: relative;
+        display: flex;
+    }
+
+    .close-icon {
+        z-index: 9999;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .nav-menu-conatiner {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--blue);
+        z-index: 999;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20rem;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        font-size: 3.5rem;
+    }
+
+    .nav-menu-img {
+        max-width: 175px;
+        padding: 1rem 0 1rem 0;
+    }
+
+    .social-icons {
+        gap: .75rem;
+        justify-content: center;
+    }
+
+    .social-icons img {
+        max-width: 7rem;
+    }
+
+    .landing-hero {
+        padding: 6rem 14rem;
+        height: auto;
+        gap: 6rem;
+    }
+
+    .landing-hero h2 {
+        font-size: 8rem;
+    }
+
+    .landing-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero-countdown {
+        padding: 1rem 1.5rem;
+        max-width: inherit;
+        height: fit-content;
+    }
+
+    #hero-countdown span {
+        font-size: 2.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .mission-details-container h2 {
+        font-size: 3.5rem;
+    }
+
+    .mission-details-content {
+        gap: 2rem;
+    }
+
+    .details-left {
+        gap: 1rem;
+    }
+
+    .event-info h3 {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .event-bio p {
+        font-size: 2rem;
+    }
+
+    .img-right {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-right img {
+        max-height: 300px;
+    }
+
+    .left-footer h4 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .nav {
+        padding: 3rem 5rem;
+    }
+
+    .landing-hero {
+        padding: 6rem 5rem;
+        gap: 3rem;
+    }
+
+    .landing-hero h2 {
+        font-size: 6rem;
+    }
+
+    .mission-details-container {
+        padding: 6rem 5rem;
+    }
+
+    .mission-details-content {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 5rem;
+        gap: 4rem;
+    }
+
+    .left-footer,
+    .middle-footer,
+    .right-footer {
+        width: inherit;
+    }
+
+    .left-footer {
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .middle-footer {
+        gap: 3rem;
+    }
+
+    .footer-menu {
+        align-items: center;
+    }
 }

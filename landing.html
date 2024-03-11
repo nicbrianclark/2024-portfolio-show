@@ -6,42 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/script/script.js"></script>
     <title>2024 Graphic and Web Design Portfolio Show</title>
 </head>
 
 <body>
     <!-- Navigation and gradient border -->
-    <div>
-        <nav class="flex nav">
-            <img src="assets/images/white-web-logo.png" alt="portfolio show logo" class="nav-menu-img">
-            <div class="flex nav-menu-container">
-                <ul class="flex nav-menu">
-                    <li><a href="">Show Info</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Graduates</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li class="flex social-icons">
-                        <a href="https://www.facebook.com/NICgraphicdesign"><img src="assets/images/facebook-icon.png"
-                                alt="facebook icon"></a>
-                        <a href="https://www.instagram.com/nicgdes/"><img src="assets/images/instagram-icon.png"
-                                alt="instagram icon"></a>
-                        <a href="https://www.facebook.com/NICgraphicdesign"><img src="assets/images/youtube-icon.png"
-                                alt="youtube icon"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="gradient-border"></div>
-    </div>
+    <!-- <div> -->
+    <nav class="flex nav">
+        <img src="assets/images/white-web-logo.png" alt="portfolio show logo" class="nav-menu-img">
+        <div class="hamburger" aria-label="Toggle menu">
+            <img src="/assets/images/hamburger-menu.png" alt="Menu" class="menu-icon-img" onclick="toggleMenu()">
+            <img src="/assets/images/x-icon.png" alt="Close" class="close-icon" onclick="toggleMenu()">
+        </div>
+        <ul class="flex nav-menu">
+            <li><a href="">Show Info</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Graduates</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li class="flex social-icons">
+                <a href="https://www.facebook.com/NICgraphicdesign"><img src="assets/images/facebook-icon.png"
+                        alt="facebook icon"></a>
+                <a href="https://www.instagram.com/nicgdes/"><img src="assets/images/instagram-icon.png"
+                        alt="instagram icon"></a>
+                <a href="https://www.facebook.com/NICgraphicdesign"><img src="assets/images/youtube-icon.png"
+                        alt="youtube icon"></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="gradient-border"></div>
+    <!-- </div> -->
 
     <!-- Hero section with countdown -->
     <div class="flex landing-hero">
         <h2>
             Your mission, should you choose to accept it…
         </h2>
-        <div class="hero-countdown">Countdown goes here!</div>
+        <div id="hero-countdown" class="flex">
+            <span id="days"></span>
+            <span id="hours"></span>
+            <span id="minutes"></span>
+            <span id="seconds"></span>
+        </div>
         <h1>NIC Graphic and Web Design Portfolio Show</h1>
     </div>
+
+    <!-- Mission details section -->
+    <div class="flex mission-details-container">
+        <div>
+            <h2>Your Mission Details</h2>
+        </div>
+        <div class="flex mission-details-content">
+            <div class="flex details-left">
+                <div class="event-info">
+                    <h3>NIC Graphic and Web Design Portfolio Show</h3>
+                    <h3>Date: May 3, 2024</h3>
+                    <h3>Time: 5 pm to 8 pm</h3>
+                    <h3>Location: McClain Hall, North Idaho College</h3>
+                    <h3>460 W College Dr, Coeur d'Alene, ID 83814</h3>
+                </div>
+                <div class="event-bio">
+                    <p>Agents of Artistry, assemble! Your mission, should you choose to accept it, involves an evening
+                        of
+                        explosive creativity and stunning visual feats. McLain Hall and it’s expansion transforms into
+                        our
+                        secret headquarters from 5pm to 8pm, where the best of graphic design, web design, and
+                        interactive
+                        video operatives display their daring and innovative works.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/NICgraphicdesign"><img src="assets/images/facebook-icon.png"
+                            alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/nicgdes/"><img src="assets/images/instagram-icon.png"
+                            alt="instagram icon"></a>
+                    <a href="https://www.facebook.com/NICgraphicdesign"><img src="assets/images/youtube-icon.png"
+                            alt="youtube icon"></a>
+                </div>
+                <div class="calendar-directions">
+                    <a href="">Add to Calendar</a> &#124; <a href="">Directions</a>
+                </div>
+            </div>
+            <div class="img-right flex"><img src="assets/images/mouse-and-stars-icon.png" alt=""></div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer flex">
+        <div class="left-footer flex">
+            <img src="assets/images/white-web-logo.png" alt="portfolio show logo" class="nav-menu-img">
+            <div>
+                <h4>North Idaho College</h4>
+                <h4>460 N College Dr</h4>
+                <h4>Coeur d’Alene, ID 83814</h4>
+            </div>
+        </div>
+
+        <div class="middle-footer flex">
+            <div>
+                <h4>May 3, 2024</h4>
+                <h4>5pm - 8pm</h4>
+            </div>
+            <div>
+                <div class="calendar-directions-footer flex">
+                    <div class="calendar-directions"><a href="">Add to Calendar</a> &#124; <a href="">Directions</a>
+                    </div>
+                    <div class="social-icons social-icons-footer">
+                        <a href="https://www.facebook.com/NICgraphicdesign"><img src="assets/images/facebook-icon.png"
+                                alt="facebook icon"></a>
+                        <a href="https://www.instagram.com/nicgdes/"><img src="assets/images/instagram-icon.png"
+                                alt="instagram icon"></a>
+                        <a href="https://www.facebook.com/NICgraphicdesign"><img src="assets/images/youtube-icon.png"
+                                alt="youtube icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-footer">
+            <ul class="flex footer-menu">
+                <li><a href="">Show Info</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Graduates</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </footer>
 </body>
 
 </html>
