@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Input Form - Project informations </title>
+</head>
+
+<body>
+    <section class="login-container">
+        <div class="container"><img src="./assets/images/logo color.png" alt="action 24 logo"></div>
+        <h1>ADMIN PANEL</h1>
+        <p>Reserved for authorized individuals only.</p>
+        <h2>Student Project</h2>
+        <form class="login-form">
+            <div class="input-contrainer">
+                <label for="student_id">Student ID</label>
+                <input type="text" id="student_id" name="student_id" required>
+            </div>
+            <div class="input-contrainer">
+                <label for="project_id">Project ID</label>
+                <input type="text" id="project_id" name="project_id" required>
+            </div>
+            <div class="input-contrainer">
+                <label for="img_src">Please upload project image</label>
+                <input type="file" name="img_src" id="upload">
+            </div>
+            <div class="input-group">
+                <div class="input-contrainer">
+                    <h2>Project informations</h2>
+                    <label for="title">Project title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <label for="message">Project Description</label>
+                <textarea name="textarea" style="width:100%;height:150px;"></textarea>
+            </div>
+        
+        
+            
+            <div class="input-submit button"><input name="submit" type="submit" value="Add Project" /></div>
+        </form>
+    </section>
+    <script>
+          function ShowHidePass(inputId, iconId) {
+        var x = document.getElementById(inputId);
+        var z = document.getElementById(iconId);
+        if (x.type === "password") {
+            x.type = "text";
+            z.classList.remove("fa-eye");
+            z.classList.add("fa-eye-slash");
+        } else {
+            x.type = "password";
+            z.classList.remove("fa-eye-slash");
+            z.classList.add("fa-eye");
+        }
+    }
+    </script>
+</body>
+
+</html>
