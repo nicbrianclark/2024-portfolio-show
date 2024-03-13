@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Input Form - Student informations </title>
+</head>
+
+<body>
+    <section class="login-container">
+        <div class="container"><img src="./assets/images/logo color.png" alt="action 24 logo"></div>
+        <h1>ADMIN PANEL</h1>
+        <p>Reserved for authorized individuals only.</p>
+        <h2>Student informations</h2>
+        <form class="login-form">
+            <div class="input-contrainer">
+                <label for="student_id">Student ID</label>
+                <input type="text" id="student_id" name="student_id" required>
+            </div>
+            <div class="input-contrainer">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="input-contrainer">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="input-contrainer">
+                <label for="skills">Skills</label>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Bio</label>
+                <textarea name="textarea" style="width:100%;height:150px;"></textarea>
+            </div>
+            <div class="input-contrainer">
+                <label for="experience">Experience/Awards</label>
+                <input type="text" id="experience" name="experience" required>
+            </div>
+            <div class="input-contrainer">
+                <label for="contact">Contact informations</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+            <div class="input-contrainer">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website">
+            </div>
+            <div class="input-contrainer">
+                <label for="social">Social Media</label>
+                <input type="text" id="social" name="social">
+            </div>
+            <div class="input-contrainer">
+                <label for="img_src">Please upload student image</label>
+                <input type="file" name="img_src" id="upload">
+            </div>
+            <div class="input-submit button"><input name="submit" type="submit" value="Add Student" /></div>
+        </form>
+    </section>
+    <script>
+          function ShowHidePass(inputId, iconId) {
+        var x = document.getElementById(inputId);
+        var z = document.getElementById(iconId);
+        if (x.type === "password") {
+            x.type = "text";
+            z.classList.remove("fa-eye");
+            z.classList.add("fa-eye-slash");
+        } else {
+            x.type = "password";
+            z.classList.remove("fa-eye-slash");
+            z.classList.add("fa-eye");
+        }
+    }
+    </script>
+</body>
+
+</html>
