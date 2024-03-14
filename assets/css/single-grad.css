@@ -1,0 +1,34 @@
+
+/* Fonts */
+h1.hemi-head span#student-name {
+    font-family: 'HemiHead';
+    font-size: 4rem;
+    color: white;
+}
+
+h2.hemi-head {
+    font-family: 'HemiHead';
+    font-size: 3rem;
+    color: white;
+}
+
+ol.student-skills li, ol.student-experience li {
+    color: white;
+    font-family: 'Helvetica Neue';
+    font-size: 1.5rem;
+}
+
+.helvetica {
+    font-weight: 'Helvetica Neue';
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* Colors */
+
+
+/* Images */
+
+
+/* Grid */
