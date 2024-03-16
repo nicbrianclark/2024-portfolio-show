@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="./assets/css/single-grad.css">
 </head>
 
-<body>
+<body class="single-grad-page">
    
         <!-- Student Image -->
-        <section class="grid student-section">
-            <div class="student-profile-img-container">
-                <img class="student-profile-img" src="https://fakeimg.pl/324x314" alt="Student Image">
+        <section class="single-grad-grid student-section">
+
+            <h1 class="hemi-head">Special Agent: <span id="student-name">Student Name</span></h1>
+
+            <div class="student-profile-img-container single-flex-col">
+                <img class="student-profile-img single-imgs" src="https://fakeimg.pl/324x314" alt="Student Image">
             </div>
 
             <!-- Student description -->
             <div id="student-description">
-                <h1 class="hemi-head">Special Agent: <span id="student-name">Student Name</span></h1>
                 <h2 class="hemi-head">Top Skills</h2>
                 <ol class="student-skills">
                     <li>Skill #1</li>
@@ -38,14 +40,14 @@
             </div>
 
             <!-- Contact -->
-            <div>
+            <div class="single-grad-contact single-flex-col">
                 <h2 class="hemi-head">Get in Touch</h2>
-                <a href="#">www.studentwebsite.com</a>
-                <a href="#">example@email.com</a>
+                <a class="single-grad-links" href="#">www.studentwebsite.com</a>
+                <a class="single-grad-links" href="#">example@email.com</a>
             </div>
 
             <!-- Social media -->
-            <div>
+            <div class="single-flex-row">
                 <!-- facebook -->
                 <a href=""><img src="./assets/images/facebook-icon.png" alt="facebook icon"></a>
 
@@ -59,27 +61,30 @@
         </section>
 
         <!-- Portfolio items -->
-        <section class="grid portfolio-section">
+        <section class="single-grad-grid portfolio-section">
             <h1 class="hemi-head">Successful Missions</h1>
             <!-- Images -->
-            <div>
+            <div class="single-flex-col single-project-img-container">
                 <!-- project1 -->
-                <img src="https://fakeimg.pl/278x269" alt="">
+                <img class="single-grad-projects single-imgs" src="https://fakeimg.pl/278x269" alt="">
                 <!-- project2 -->
-                <img src="https://fakeimg.pl/278x269" alt="">
+                <img class="single-grad-projects single-imgs" src="https://fakeimg.pl/278x269" alt="">
                 <!-- project3 -->
-                <img src="https://fakeimg.pl/278x269" alt="">
+                <img class="single-grad-projects single-imgs" src="https://fakeimg.pl/278x269" alt="">
                 <!-- project4 -->
-                <img src="https://fakeimg.pl/278x269" alt="">
+                <img class="single-grad-projects single-imgs" src="https://fakeimg.pl/278x269" alt="">
                 <!-- project5 -->
-                <img src="https://fakeimg.pl/278x269" alt="">
+                <img class="single-grad-projects single-imgs" src="https://fakeimg.pl/278x269" alt="">
             </div>
+
             <!-- video -->
-            <div>
-                <video width="360" height="240" src="http://java2s.com/style/demo/your.webm" controls preload="none" poster="http://java2s.com/style/download.png">
+            
+                <video class="single-grad-video" width="360" height="240" src="http://java2s.com/style/demo/your.webm" controls preload="none" poster="http://java2s.com/style/download.png">
                     Video cannot be displayed
                 </video>
-            </div>
+            
+                
+                <h2 class="hemi-head view-more-single-grad">View more of "STUDENT" work at Action 24!</h2>
 
         </section>
     </main>

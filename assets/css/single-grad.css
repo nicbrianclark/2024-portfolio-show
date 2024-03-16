@@ -1,6 +1,8 @@
 
+
+
 /* Fonts */
-h1.hemi-head span#student-name {
+h1.hemi-head, span#student-name {
     font-family: 'HemiHead';
     font-size: 4rem;
     color: white;
@@ -9,26 +11,101 @@ h1.hemi-head span#student-name {
 h2.hemi-head {
     font-family: 'HemiHead';
     font-size: 3rem;
-    color: white;
+    color: var(--white);
 }
 
 ol.student-skills li, ol.student-experience li {
-    color: white;
+    color: var(--white);
     font-family: 'Helvetica Neue';
     font-size: 1.5rem;
 }
 
-.helvetica {
+p.helvetica {
     font-weight: 'Helvetica Neue';
-    color: white;
-    font-size: 1rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+#student-description, .single-grad-contact {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 2.3rem;
+}
+
+.view-more-single-grad {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* links */
+a.single-grad-links {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+
 }
 
 
-/* Colors */
+
+/* Images and Video */
+.single-project-img-container, .student-profile-img-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.single-project-img-container {
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.single-imgs {
+    display: block;
+    width: 100%;
+}
+
+.single-grad-video {
+    grid-row: 3/4;
+    width: 70%;
+}
 
 
-/* Images */
+/* Flex */
 
 
-/* Grid */
+
+.student-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--black);
+}
+
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--blue);
+}
+
+/* center rest of content */
+.single-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.single-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.single-grad-video {
+    margin: 0 auto;
+}
