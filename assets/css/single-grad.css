@@ -67,14 +67,12 @@ a.single-grad-links {
 }
 
 .single-project-img-container {
+    gap: 3rem;
+    margin-bottom: 4rem;
+
     width: 40%;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.single-project-img-container {
-    gap: 3rem;
-    margin-bottom: 4rem;
 }
 
 .single-imgs {
@@ -102,6 +100,7 @@ a.single-grad-links {
     width: 60%;
     height: auto;
     margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
 
@@ -154,7 +153,13 @@ a.single-grad-links {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
+        max-width: 1000px;
+    }
+
+    .student-profile-img-container {
+        width: 100%;
+        max-width: 560px;
     }
 
     .single-grad-projects {
@@ -165,7 +170,8 @@ a.single-grad-links {
         display: block;
         width: 20%;
         height: auto;
-        margin: 0rem 5rem 0rem 5rem;
+        margin: 0rem 6rem 0rem 6rem;
+        padding: 0;
     }
 
     .single-grad-video {
@@ -183,7 +189,7 @@ a.single-grad-links {
     .student-section {
         display: grid;
         width: 90%;
-        grid-template-columns: 1fr 0.5fr 0.5fr;
+        grid-template-columns: 1fr 0.4fr 0.3fr;
         grid-template-rows: 0.2fr 1.5fr;
         padding-bottom: 4rem;
     }
@@ -209,14 +215,53 @@ a.single-grad-links {
     .single-grad-contact {
         grid-row: 4/5;
         grid-column: 2/3;
-
+        margin: 0 auto;
+        text-align: center;
     }
 
     .single-grad-social-media-contain {
         grid-row: 4/5;
         grid-column: 3/4;
-
+        margin: 0 auto;
+        text-align: center;
     }
     
 
+}
+
+@media screen and (min-width: 1250px) {
+
+    /* text edits */
+    h1.hemi-head, span#student-name {
+        font-size: 5rem;
+    }
+    
+    h2.hemi-head {
+        font-size: 4rem;
+    }
+    
+    ol.student-skills li, ol.student-experience li {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    
+    p.helvetica {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .view-more-single-grad {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    /* edit widths */
+    .student-section, .single-project-img-container {
+        max-width: 1248px;
+    }
+
+    .single-grad-video {
+        margin-top: 4rem;
+    }
 }
