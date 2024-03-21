@@ -10,7 +10,8 @@
 </head>
 
 <body>
-<a href="./contact.php">Contact</a>
+    <h1>Home</h1>
+    <a href="./contact.php">Contact</a>
 </body>
 
 </html>
